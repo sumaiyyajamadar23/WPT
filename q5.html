@@ -1,6 +1,6 @@
 <html>
    <body>
-   <table border="1" >
+   <table bgcolor="pink" border="2">
       <tbody>
             <tr> 
                   <td>Name</td>
@@ -8,7 +8,7 @@
             </tr>
             <tr> 
                   <td>Employee Code</td>
-                  <td><input type="text" name="cd" id="cd" required minlength="3"/</td>
+                  <td><input type="text" name="cd" id="cd" required minlength="3"></td>
             </tr>
             <tr> 
                   <td >Department</td>
@@ -31,22 +31,29 @@
             <tr> 
                   <td>Training programs attended</td>
                   <td>
-                        <input type="checkbox" name="skill" id="html1" value="html1">JAVA
-                        &nbsp;&nbsp;&nbsp;
-                        <input type="checkbox" name="skill" id="java" value="java">JAVA></label>
-                        <br>
-                        <input type="checkbox" name="skill" id="cs" value="cs">CLENT/SERVER
-                        <input type="checkbox" name="skill" id="Dotnet" value="Dotnet"><label for=".NET">DBMS</label>   
+                        <input type="checkbox" name="skill" id="html1" value="html1">
+                        <label for="html1">HTML</label><br>
+                        <input type="checkbox" name="skill" id="java" value="java">JAVA></label> <br>
+                        <input type="checkbox" name="skill" id="cs" value="cs">CLENT/SERVER<br>
+                        <input type="checkbox" name="skill" id="Dotnet" value="Dotnet"><label for=".NET">DBMS</label>  <br> 
                   </td>
             </tr>
             <tr> 
                   <td>Training programs need to attend</td>
-                  <td></td>
+                  <td>
+                     <select name="Programs" id="programs">
+                        <option value="Jscipt">JSCRIPT</option>
+                        <option value="Python">PYTHON</option>
+                        <option value="CSS">CSS</option>
+                     </select>
+                  </td>
             </tr>
            
             <tr> 
                   <td>Send the information at</td>
-                  <td></td>
+                  <td>
+                        <a href="mailto:sumaiyyajamadar23@gmail.com">contact us</a>
+                  </td>
             </tr>
 
            
