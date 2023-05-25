@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            td{
+                padding:5px;
+                padding-left: 70px;
+            }
+        </style>
+    </head>
+    <body><form>
+        <fieldset style="height: 50%;width:50%;margin-right: auto; background-color:darkslateblue">
+            <legend>Registration Details</legend>
+        <table>
+<tbody>
+           <tr> <td >University:</td><td><input type="text"name="nm" id="nm"></td></tr>
+           <tr> <td>Institute:</td><td><input type="text"name="nm1" id="nm1"></tr><td></td></tr>
+          <tr> <td>Branch:</td>
+           <td><select name="branch" id="branch">
+            <option value="cs">CS</option>
+             <option value="mech">Mech</option>
+             <option value="ele">Elec</option>
+             <option value="civil">Civil</option>
+         </select></td></tr>
+           <tr><td>Degree:</td>
+            <td><select name="degree" id="degree">
+                <option value="BE">BE</option>
+                <option value="Btech">Btech</option>
+            </select>
+            <input type="radio" name="pur" id="pur">Pursuing
+            <input type="radio" name="comp" id="comp">Completed</td> 
+        </tr>
+          <tr><td>Average CGPI:</td><td><input type="number" name="cgp" id="cgp" min="1" max="10">  
+           Upto:<input type="number" name="sem" id="sem" min="1" max="8">Th semester</td></tr>
+         <tr><td> Experience:</td><td> <input type="number" name="sem" id="sem" min="2" max="10" width="5px"></td></tr>
+         <tr><td>Your Website or blog:</td><td><input type="text" ></td></tr>
+        </tbody>
+        </table>
+        </fieldset>
+    </form>
+    </body>
+</html>
