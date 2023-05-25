@@ -1,37 +1,39 @@
 <html>
     <body>
-      
+        <form>
+            <fieldset>
         <h1> Internet Usage servey</h1>
-        <p>
+        <pre>
            This servey  is being conducted to help identify the internet usage patterns of our customers.
            Please take a few minites to complete and submit this short form.Thank you for your coopration.
-        </p>
-        <table>
-       <tr>
-        <td>
- <label for="connections">What type of Internet connection do you have?<br>(Select one)</label></td>
-        <!-- <textarea name="connect" id="connections" rows="4" cols="20"></textarea> -->
-       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        </pre>
+ <table>
+     <tr> <td>
+             What type of Internet connection do you have?<br>(Select one)
+           </td>
       <td>  <select name="connections" id="connections">
             <option value="Dial">Dial-up</option>
             <option value="DSL">DSL</option>
             <option value="cable">High speed cable</option>
-            <option value="other">Other</option>
-      
-        </select>  </td><br>
+            <option value="other">Other</option> 
+        </select>
+      </td>
     </tr>
-<tr>
+  <tr>
       <td>  <label>what type of computers do you use most at home?</label></td>
      <td>   <input type="radio" name="desktop" id="desktop">Desktoop
-        
-        <input type="radio" name="laptop" id="laptop">Laptop
-        <br>
+            <input type="radio" name="laptop" id="laptop">Laptop
     </td>
-    </tr>
+   </tr>
     <tr colspan="6">
-        <td><label>How would you describe your main reason fro using internet?</label></td>
+        <td>
+           
+            <label>How would you describe your main reason fro using internet?</label></td>
         <br>
-    <td> <input type="radio" name="d" id="d">to do work related activities<br>
+    <td> <pre>
+
+    </pre>
+    <input type="radio" name="d" id="d">to do work related activities<br>
         <input type="radio" name="d1" id="d1">to do school related activities<br>
         <input type="radio" name="d2" id="d1">For entertain purpose<br>
         <input type="radio" name="d3" id="d3">Other activities<br>
@@ -39,7 +41,10 @@
     </tr>
     <tr>
     <td>
-        <fieldset>
+        <pre>
+
+        </pre>
+        <fieldset style=" height:200px">
             <legend>Types of sites visited</legend>
           <p>
             what type of web sites do you access most often?
@@ -55,7 +60,10 @@
         </fieldset>
 </td>
 <td>
-    <fieldset>
+    <pre>
+
+    </pre>
+    <fieldset style=" height:200px">
         <legend>Time spent using internetr</legend>
       <p>
        during and average week how long do you spent online?
@@ -72,10 +80,48 @@
 </td>
 </tr>
 <tr>
-    <td>
+ <td>
 <p>please comment on your opinions concerning internet and seftey</p>
-<textarea name="text1" id="text1">
+<textarea name="text1" id="text1"></textarea>
 </td>
-</tr> </table>
+</tr> 
+<tr>
+    <td>
+        <pre>
+
+        </pre>
+        First name:<input type="text">
+    </td>
+    <td>
+        <pre>
+
+        </pre>
+        Last name:<input type="text">
+    </td>
+</tr>
+<tr>
+    <td>
+        <pre>
+
+        </pre>
+        Age:<input type="text">
+    </td>
+    <td>
+        <pre>
+
+        </pre>
+        Zipcode:<input type="text">
+    </td>
+</tr>
+<tr>
+    <td>
+        <td><button type="submit" name="btn" id=submit value="submit">Sumbit</button>
+        <button type="reset" name="btn" id=reset value="reset">Cancel</button></td>
+    </td>
+</tr>
+
+</table>
+</form>
+</fieldset>
     </body>
 </html>
