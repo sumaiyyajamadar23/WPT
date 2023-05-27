@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+          function validate()
+        {
+            str=""
+            var p=document.getElementsByName("sp")
+            cnt=0
+           for(var i=0;i<=p.length;i++)
+           {
+            if(p[i].checked)
+            {
+                str=str+p[i].value+","
+                cnt++;
+            }
+           } 
+           document.getElementById("mydiv").innerHTML=str 
+        }
+        </script>
+    </head>
+    <body>
+        <input type="checkbox" name="sp" id="sk1" value="java">JAVA<label for="sk1">JAVA</label><br>
+        <input type="checkbox" name="sp" id="sk2" value="c++">c++<label for="sk2">c++</label><br>
+        <input type="checkbox" name="sp" id="sk3" value="Python">Python<label for="sk3">Python</label><br>
+        <input type="checkbox" name="sp" id="sk4" value="DBMS">DBMS<label for="sk4">DBMS</label><br>
+        <input type="checkbox" name="sp" id="sk5" value="Jscript">Jscript<label for="sk5">Jscript</label><br>
+        <button type="button" name="btn" id="btn" onclick="validate()">Add skills</button><br>
+        <div id="mydiv"> 
+
+        </div>
+
+    </body>
+</!DOCTYPE>
