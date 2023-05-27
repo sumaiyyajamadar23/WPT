@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function validatepass()
+            {
+                var pas=document.getElementById("pass").value
+                var cpas=document.getElementById("cpass").value
+                if(pas==cpas)
+                {
+                    document.getElementById("error").innerHTML=""
+                    return true;
+                }
+                else
+                {
+                    document.getElementById("error").innerHTML="not matching pass"
+                    return false;
+                }
+            }
+            function validatedata()
+            {
+                flag=validatepass()
+                return flag
+            }
+        </script>
+    </head>
+    <body>
+        <form action="validateusers" method="get" onsubmit="return validatedata()">
+            <table>
+                <tbody>
+           <tr><td>ENTER USERNAME:</td><td><input type="text" name="user" id="user"  placeholder="Enter name" pattern="[A-Za-z]+[#@][A-Za-z0-9]+"  required autofocus></td></tr> 
+           <tr><td>ENTER PASSWORD:</td><td><input type="text" name="pass" id="pass" placeholder="Enter password"  required></td></tr>
+           <tr><td>CONFIRM PASSWORD:</td><td><input type="text" name="cpass" id="cpass" required placeholder="Confirm password"></td>
+            <td id="error"></td></tr> 
+           <tr><td></td><td><button type="submit" name="btn" id="btn" value="Login">Login</button>
+            <input type="reset" name="bt" id="bt" value="cancel"></td></tr>
+         </tbody>
+        </table>
+        </form>
+    </body>
+</html>
