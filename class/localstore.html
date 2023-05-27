@@ -11,7 +11,8 @@
                               }
                               else
                              { 
-                              val=parseInt(localStorage.getItem("count"))
+                              val=parseInt(localStorage.count)
+                              //val=parseInt(localStorage.getItem("count"))
                               localStorage.count=val-1;
                              }
                         }
@@ -19,24 +20,8 @@
                         {
                               document.getElementById("mydiv").innerHTML="web storage doesnt support";
                         }
-                        decreament.getElementById("mydiv").innerHTML="you clicked "+localStorage.count+"times";
-                       /*
-                         function decrementcount(){
-                //to check whether browser supports storage API
-                if(typeof(Storage)!== undefined){
-                  if(localStorage.count===undefined || localStorage.count==="0" ){
-                       localStorage.count=0;
-                   }else{
-                    //val=parseInt(localStorage.count)
-                    val=parseInt(localStorage.getItem("count"))
-                    localStorage.count=val-1;
-                   }
-                }else{
-                    document.getElementById("mydiv").innerHTML="web storage is not supported"  
-                }
-                document.getElementById("mydiv").innerHTML="you clicked "+localStorage.count+ " times";
-        }*/
-                        
+                        document.getElementById("mydiv").innerHTML="you clicked "+localStorage.count+"times";
+                               
                   }
                   
                   function increament()
@@ -57,12 +42,32 @@
                         {
                               document.getElementById("mydiv").innerHTML="web storage doesnt support";
                         }
+                        document.getElementById("mydiv").innerHTML="you clicked "+localStorage.count+"times";
+                            
+                  }
+                  function remove()
+                  {
+                        if(typeof(Storage)!==undefined)
+                        {
+                              if(localStorage!==undefined)
+                              {
+                                    localStorage.removeItem("count");
+                                    document.getElementById("mydiv").innerHTML="removed all!!!"
+                              }
+                        }
+                        else
+                        {
+                              document.getElementById("mydiv").innerHTML="web doesnt support local storage"
+                        }
+                        
                   }
             </script>
       </head>
       <body>
             <button type="button" name="btn" id="btn" onclick="increament()">increament</button>
-            <button type="button" name="btn1" id="btn" onclick="idecreament()">decreament</button>
+            <button type="button" name="btn1" id="btn" onclick="decreament()">decreament</button>
+            <button type="button" name="btn1" id="btn" onclick="remove()">remove</button>
+           
             <div id="mydiv">
 
             </div>
