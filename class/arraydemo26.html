@@ -1,0 +1,74 @@
+<html>
+      <head>
+            <script>
+                  arr=["A","B"];
+                  function datalist()
+                  {
+                        str="<ul>"
+                              for(var i=0;i<arr.length;i++)
+                              {
+                                    str+="<li>"+arr[i]+"</li>"
+                              }
+                              str+="</ul>"
+                              document.getElementById("mydiv").innerHTML=str;
+                  }
+      
+                  function addn()
+                  {
+                        val=document.getElementById("nm").value
+                        arr.push(val)
+                        datalist();
+                        document.getElementById("nm").value="";
+                        document.getElementById("nm").focus();
+
+                  }
+                  function deletel()
+                  {
+                        val=document.getElementById("nm").value
+                        // cnt=0
+                        // for(var name of arr) 
+                        // {
+                        //       if(val==name)
+                        //       {
+                        //             arr.splice(cnt,1)
+                        //             break;
+                        //       }
+                        //       cnt++;
+                        // }
+                        // datalist();
+                        // document.getElementById("nm").value="";
+                        // document.getElementById("nm").focus();
+                        pos=arr.findIndex(name=>name===val)
+                        if(pos!=-1)
+                        {
+                            arr.splice(pos,1)
+                        }
+                        datalist();
+                        document.getElementById("nm").value="";
+                        document.getElementById("nm").focus();
+                  }
+                  function update()
+                  {
+                    val=document.getElementById("nm").value
+                    pos=arr.findIndex(name=>name===val)
+                        if(pos!=-1)
+                        {
+                            arr.splice(pos,1,"sp","rs","js")
+                        }
+                        datalist();
+                        document.getElementById("nm").value="";
+                        document.getElementById("nm").focus();
+                  }
+
+            </script>
+      </head>
+      <body onload="datalist()">
+            Enter name:<input type="text" name="nm" id="nm" placeholder="Enter name">
+            <button type="button" name="btn" id="ADD" value="ADD" onclick=" addn()">add new</button>
+            <button type="button" name="btn" id="DELETE" value="DELETE" onclick="deletel()">delete name</button>
+            <button type="button" name="btn" id="update" value="delete name" onclick="update()">update name</button>
+            <div id="mydiv">
+
+            </div>
+      </body>
+</html>
