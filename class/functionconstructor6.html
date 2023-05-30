@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            var Person=function(id,nm,des)
+            {
+                this.id=id
+                this.nm=nm
+                this.des=des
+            }
+            var Employee=function(eid,ename)
+            {
+                this.eid=eid
+                this.ename=ename
+            }
+            e1=new Person(9,"smj","kop")
+            for(var prop in e1)
+            {
+                console.log(prop+"====>"+e1[prop]) 
+            }
+        </script>
+    </body>
+</html>

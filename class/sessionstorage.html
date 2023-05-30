@@ -1,0 +1,75 @@
+<html>
+      <head>
+            <script>
+                  function decreament()
+                  {
+                        if(typeof(Storage)!==undefined)
+                        {
+                              if(sessionStorage.count===undefined || sessionStorage.count==="0")
+                              {
+                                sessionStorage.count=0;
+                              }
+                              else
+                             { 
+                              val=parseInt(sessionStorage.count)
+                              //val=parseInt(localStorage.getItem("count"))
+                              sessionStorage.count=val-1;
+                             }
+                        }
+                              else
+                        {
+                              document.getElementById("mydiv").innerHTML="web storage doesnt support";
+                        }
+                        document.getElementById("mydiv").innerHTML="you clicked "+sessionStorage.count+"times";
+                               
+                  }
+                  
+                  function increament()
+                  {
+                        if(typeof(Storage)!==undefined)
+                        {
+                              if(sessionStorage.count===undefined )
+                              {
+                                sessionStorage.count=1;
+                              }
+                               else
+                               {
+                                    val=parseInt(sessionStorage.count);
+                                    sessionStorage.count=val+1
+                               }
+                        }
+                        else
+                        {
+                              document.getElementById("mydiv").innerHTML="web storage doesnt support";
+                        }
+                        document.getElementById("mydiv").innerHTML="you clicked "+sessionStorage.count+"times";
+                            
+                  }
+                  function remove()
+                  {
+                        if(typeof(Storage)!==undefined)
+                        {
+                              if(sessionStorage!==undefined)
+                              {
+                                    sessionStorage.removeItem("count");
+                                    document.getElementById("mydiv").innerHTML="removed all!!!"
+                              }
+                        }
+                        else
+                        {
+                              document.getElementById("mydiv").innerHTML="web doesnt support local storage"
+                        }
+                        
+                  }
+            </script>
+      </head>
+      <body>
+            <button type="button" name="btn" id="btn" onclick="increament()">increament</button>
+            <button type="button" name="btn1" id="btn" onclick="decreament()">decreament</button>
+            <button type="button" name="btn1" id="btn" onclick="remove()">remove</button>
+           
+            <div id="mydiv">
+
+            </div>
+      </body>
+</html>
