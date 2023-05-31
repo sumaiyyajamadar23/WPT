@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+             .sp
+          {
+            background-color:blue;
+            color:white;
+            border: 2px solid red;
+          }
+          .spl
+          {
+            background-color:aqua;
+            color:aqua;
+            text-shadow:2px 2px 2px red;
+            border: 2px solid red;
+          }
+        </style>
+        <script src="./jquery.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $('h1').hover(function()
+                {
+                    $(this).addClass('spl')
+                    .removeClass('sp')
+                },
+                function()
+                {
+                    $(this).addClass('sp')
+                    .removeClass('spl')   
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <h1 class="sp">Hii,My name is sumaiyya</h1>
+    </body>
+</html>
