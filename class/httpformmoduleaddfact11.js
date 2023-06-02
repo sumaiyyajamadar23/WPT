@@ -17,7 +17,7 @@ const server=http.createServer(function(req,resp)
                   if(s.query.btn==="add")
                   {
                         var num1=parseInt(s.query.num1)
-                        var num2=parseInt(s.query.num1)
+                        var num2=parseInt(s.query.num2)
                         var ans=m.addition(num1,num2)
                         resp.write("<h3>Addition : "+ans+"</h3>");
 
