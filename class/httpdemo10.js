@@ -1,11 +1,10 @@
-//import http library
 const http=require("http")
-//create a server
-var server=http.createServer(function(req,resp){
+
+var server=http.createServer(function(req,res)
+{
     console.log("method:",req.method,"url: ",req.url)//loads req method and url url of incoming request of server
-    resp.writeHeader(200,{"content-type":"text/html"})
-    resp.write("<h1>Hello world!!</h1>")
-    resp.end("<h3>Welcome to nodejs programming</h3>")
+   res.writeHeader(200,{"conent-type":"text/html"})
+   res.write("<h1>jagooooooo port 2190</h1>")
+   res.end("<h3>subh bo gaiiiiii</h3>")
 })
-//start the server and listen to the request
-server.listen(3001,console.log("server started running on port 3001"))
+server.listen(2190,console.log("ha jag gaya port 2190"))
