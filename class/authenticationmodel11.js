@@ -9,7 +9,7 @@ exports.validation=(username,password)=>
 exports.adduser=(username,password)=>
 {
     var v=userdata[username]
-    if(p!==undefined)
+    if(v!==undefined)
     {
         return false;
     }

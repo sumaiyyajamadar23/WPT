@@ -20,8 +20,8 @@ const server=http.createServer(function(req,res)
             break;
         case "/Validateuser":
             var uname=s.query.uname
-            var pass=s.query.pass
-            var ans=m.validation(uname,pass)
+            var passwd=s.query.passwd
+            var ans=m.validation(uname,passwd)
             if (ans)
             {
                 res.write("<h3>Successful login</h3>")
@@ -36,8 +36,8 @@ const server=http.createServer(function(req,res)
             }
             break;
             case "/registeruser":
-                var uname=q.query.uname;
-                var passwd=q.query.passwd
+                var uname=s.query.uname;
+                var passwd=s.query.passwd;
                 var ans=m.adduser(uname,passwd)
                 if(ans)
                 {
@@ -58,4 +58,4 @@ const server=http.createServer(function(req,res)
             res.end()
     }
 })
-server.listen(1234,console.log("zinda hu m 0912 pe"))
+server.listen(1234,console.log("zinda hu m 1234 pe"))
