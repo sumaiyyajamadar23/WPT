@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Myheader from './components/Myheader';
+import CounterComponent from './components/counter';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <h1>Header</h1>
       <Myheader></Myheader>
      <h1>My name is sumaiyya</h1>
-     <Counter></Counter>
+     <CounterComponent></CounterComponent>
     </div>
   );
 }

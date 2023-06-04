@@ -1,0 +1,19 @@
+{
+  "name": "friendlist",
+  "version": "1.0.0",
+  "description": "List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sumaiyya",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "sumaiyyajamadar23"
+  },
+  "keywords": [
+    "malum",
+    "nahi"
+  ]
+}
