@@ -8,12 +8,12 @@ r.get("/employyees",(req,res)=>
     {
         if(err)
         {
-            resp.status(500).send("data not found"+JSON.stringify(err))
+            res.status(500).send("data not found"+JSON.stringify(err))
         }
         else
         {
-            resp.send(data)
+            res.send(data)
         }
         })
 })
-module.exports=router;
+module.exports=r;
